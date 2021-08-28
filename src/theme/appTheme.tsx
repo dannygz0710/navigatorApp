@@ -11,5 +11,19 @@ export const styles = StyleSheet.create({
         fontSize: 25,
         marginBottom: 10,
     },
+    bigBotton: {
+        width: 100,
+        height: 100,
+        backgroundColor: 'red',
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent:'center',
+        marginRight: 10
+    },
+    textBotton: {
+        color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold'
+    }
     
 });

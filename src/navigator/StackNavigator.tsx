@@ -4,8 +4,18 @@ import { PageScreen1 } from '../screens/PageScreen1';
 import { PageScreen2 } from '../screens/PageScreen2';
 import { PageScreen3 } from '../screens/PageScreen3';
 import { PersonScreen } from '../screens/PersonScreen';
+import { RotationGestureHandler } from 'react-native-gesture-handler';
 
-const Stack = createStackNavigator();
+
+export type RootStackParams = {
+PageScreen1: undefined,
+PageScreen2: undefined,
+PageScreen3: undefined,
+PersonScreen: { id: number, nombre: string },
+
+}
+
+const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator =() => {
   return (
